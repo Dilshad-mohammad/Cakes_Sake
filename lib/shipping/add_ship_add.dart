@@ -1,5 +1,5 @@
-import 'package:cakeApp/Signup/sign_up.dart';
-import 'package:cakeApp/Signup/verify.dart';
+import 'package:cake_lake/Signup/sign_up.dart';
+import 'package:cake_lake/Signup/verify.dart';
 import 'package:flutter/material.dart';
 
 class addShippingAddress extends StatefulWidget {

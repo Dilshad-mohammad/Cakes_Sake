@@ -8,12 +8,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:cakeApp/main.dart';
+import 'package:cake_lake/main.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(const CakeApp());
+    await tester.pumpWidget(const cake_lake());
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);

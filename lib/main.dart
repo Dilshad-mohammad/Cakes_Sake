@@ -1,12 +1,12 @@
-import 'package:cakeApp/Signup/sign_up.dart';
+import 'package:cake_lake/Signup/sign_up.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const CakeApp());
+  runApp(const cake_lake());
 }
 
-class CakeApp extends StatelessWidget {
-  const CakeApp({super.key});
+class cake_lake extends StatelessWidget {
+  const cake_lake({super.key});
 
   @override
   Widget build(BuildContext context) {

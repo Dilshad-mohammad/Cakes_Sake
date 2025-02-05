@@ -1,4 +1,4 @@
-import 'package:cakeApp/Product/widgets/product_items.dart';
+import 'package:cake_lake/Product/widgets/product_items.dart';
 import 'package:flutter/material.dart';
 
 class ProductsSectionHeading extends StatelessWidget {

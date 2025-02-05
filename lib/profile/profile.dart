@@ -1,4 +1,4 @@
-import 'package:cakeApp/Signup/login.dart';
+import 'package:cake_lake/Signup/login.dart';
 import 'package:flutter/material.dart';
 
 class Profile extends StatefulWidget {
