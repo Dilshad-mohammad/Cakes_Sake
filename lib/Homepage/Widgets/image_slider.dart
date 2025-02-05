@@ -37,7 +37,7 @@ Widget buildImageSlider() {
           width: 1000,
         ),
       ))
-          .toList(),
+          ,
     ],
   );
 }

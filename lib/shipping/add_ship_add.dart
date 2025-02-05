@@ -16,7 +16,7 @@ class _addShippingAddressState extends State<addShippingAddress> {
       backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Text("Add Shipping Address",
+        title: const Text("Add Shipping Address",
             style: TextStyle(
                 color: Colors.white,
                 fontSize: 21,
@@ -31,12 +31,12 @@ class _addShippingAddressState extends State<addShippingAddress> {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(16),
+          padding: const EdgeInsets.all(16),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const SizedBox(height: 10),
-              Row(
+              const Row(
                 children: [
                   Text('Name',style: TextStyle(color: Colors.white,fontWeight: FontWeight.w600,fontSize: 15)),
                   Text('*',style: TextStyle(color: Colors.pinkAccent,fontWeight: FontWeight.w600,fontSize: 15),)
@@ -49,16 +49,16 @@ class _addShippingAddressState extends State<addShippingAddress> {
                   style: const TextStyle(color: Colors.white),
                   decoration: InputDecoration(
                     hintText: 'Full Name',
-                    fillColor: Color(0xff1C1B1B),
+                    fillColor: const Color(0xff1C1B1B),
                     filled: true,
-                    hintStyle: TextStyle(fontSize: 15.0, color: Colors.grey),
+                    hintStyle: const TextStyle(fontSize: 15.0, color: Colors.grey),
                     border:
                     OutlineInputBorder(borderRadius: BorderRadius.circular(2)),
                   ),
                 ),
               ),
               const SizedBox(height: 10),
-              Row(
+              const Row(
                 children: [
                   Text('Phone Number',style: TextStyle(color: Colors.white,fontWeight: FontWeight.w600,fontSize: 15)),
                   Text('*',style: TextStyle(color: Colors.pinkAccent,fontWeight: FontWeight.w600,fontSize: 15),)
@@ -71,9 +71,9 @@ class _addShippingAddressState extends State<addShippingAddress> {
                   style: const TextStyle(color: Colors.white),
                   decoration: InputDecoration(
                     hintText: 'Phone Number',
-                    fillColor: Color(0xff1C1B1B),
+                    fillColor: const Color(0xff1C1B1B),
                     filled: true,
-                    hintStyle: TextStyle(fontSize: 15.0, color: Colors.grey),
+                    hintStyle: const TextStyle(fontSize: 15.0, color: Colors.grey),
                     border:
                     OutlineInputBorder(borderRadius: BorderRadius.circular(2)),
                   ),
@@ -81,7 +81,7 @@ class _addShippingAddressState extends State<addShippingAddress> {
               ),
               TextButton(
                 onPressed: () {},
-                child: Text('+ Add New Shipping Address',
+                child: const Text('+ Add New Shipping Address',
                     style: TextStyle(
                         color: Colors.orangeAccent,
                         fontWeight: FontWeight.w400,
@@ -135,7 +135,7 @@ class _addShippingAddressState extends State<addShippingAddress> {
               //   ],
               // ),
               const SizedBox(height: 10),
-              Row(
+              const Row(
                 children: [
                   Text('City',style: TextStyle(color: Colors.white,fontWeight: FontWeight.w600,fontSize: 15)),
                   Text('*',style: TextStyle(color: Colors.pinkAccent,fontWeight: FontWeight.w600,fontSize: 15),)
@@ -148,16 +148,16 @@ class _addShippingAddressState extends State<addShippingAddress> {
                   style: const TextStyle(color: Colors.white),
                   decoration: InputDecoration(
                     hintText: 'Enter City',
-                    fillColor: Color(0xff1C1B1B),
+                    fillColor: const Color(0xff1C1B1B),
                     filled: true,
-                    hintStyle: TextStyle(fontSize: 15.0, color: Colors.grey),
+                    hintStyle: const TextStyle(fontSize: 15.0, color: Colors.grey),
                     border:
                     OutlineInputBorder(borderRadius: BorderRadius.circular(2)),
                   ),
                 ),
               ),
               const SizedBox(height: 10),
-              Row(
+              const Row(
                 children: [
                   Text('Address',style: TextStyle(color: Colors.white,fontWeight: FontWeight.w600,fontSize: 15)),
                   Text('*',style: TextStyle(color: Colors.pinkAccent,fontWeight: FontWeight.w600,fontSize: 15),)
@@ -170,16 +170,16 @@ class _addShippingAddressState extends State<addShippingAddress> {
                   style: const TextStyle(color: Colors.white),
                   decoration: InputDecoration(
                     hintText: 'House no., Building',
-                    fillColor: Color(0xff1C1B1B),
+                    fillColor: const Color(0xff1C1B1B),
                     filled: true,
-                    hintStyle: TextStyle(fontSize: 15.0, color: Colors.grey),
+                    hintStyle: const TextStyle(fontSize: 15.0, color: Colors.grey),
                     border:
                     OutlineInputBorder(borderRadius: BorderRadius.circular(2)),
                   ),
                 ),
               ),
               const SizedBox(height: 10),
-              Row(
+              const Row(
                 children: [
                   Text('LandMark',style: TextStyle(color: Colors.white,fontWeight: FontWeight.w600,fontSize: 15)),
                   Text('*',style: TextStyle(color: Colors.pinkAccent,fontWeight: FontWeight.w600,fontSize: 15),)
@@ -192,9 +192,9 @@ class _addShippingAddressState extends State<addShippingAddress> {
                   style: const TextStyle(color: Colors.white),
                   decoration: InputDecoration(
                     hintText: 'Street Name, Road, Area, Loacality',
-                    fillColor: Color(0xff1C1B1B),
+                    fillColor: const Color(0xff1C1B1B),
                     filled: true,
-                    hintStyle: TextStyle(fontSize: 15.0, color: Colors.grey),
+                    hintStyle: const TextStyle(fontSize: 15.0, color: Colors.grey),
                     border:
                     OutlineInputBorder(borderRadius: BorderRadius.circular(2)),
                   ),
@@ -224,14 +224,14 @@ class _addShippingAddressState extends State<addShippingAddress> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text('Dont have an account?', style: TextStyle(color: Colors.grey),),
+                  const Text('Dont have an account?', style: TextStyle(color: Colors.grey),),
                   TextButton(onPressed: () {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
                           builder: (context) => const SignUp()),
                     );
-                  }, child: Text('SignUp', style: TextStyle(color: Colors.pinkAccent)))
+                  }, child: const Text('SignUp', style: TextStyle(color: Colors.pinkAccent)))
                 ],
               ),
             ],

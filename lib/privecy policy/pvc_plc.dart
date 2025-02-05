@@ -15,7 +15,7 @@ class _editPtermConditions extends State<termConditions> {
         backgroundColor: Colors.black,
         appBar: AppBar(
           backgroundColor: Colors.black,
-          title: Text("Terms and Conditions",
+          title: const Text("Terms and Conditions",
               style: TextStyle(
                   color: Colors.white,
                   fontSize: 21,
@@ -31,15 +31,15 @@ class _editPtermConditions extends State<termConditions> {
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Padding(
-              padding: const EdgeInsets.all(8.0),
+            const Padding(
+              padding: EdgeInsets.all(8.0),
               child: Text("Where can I get Some?",
                   style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.w600,
                       fontSize: 16)),
             ),
-            Text(loremIpsum(words: 300), style: TextStyle(color: Colors.white))
+            Text(loremIpsum(words: 300), style: const TextStyle(color: Colors.white))
           ],
         ));
   }

@@ -14,7 +14,7 @@ class _editProfileState extends State<editProfile> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Text("Edit Profile", style: TextStyle(color: Colors.white,fontSize: 21,fontWeight: FontWeight.w500)),
+        title: const Text("Edit Profile", style: TextStyle(color: Colors.white,fontSize: 21,fontWeight: FontWeight.w500)),
         centerTitle: true,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: Colors.white),
@@ -25,14 +25,14 @@ class _editProfileState extends State<editProfile> {
       ),
       backgroundColor: Colors.black,
       body: SingleChildScrollView(
-        padding: EdgeInsets.fromLTRB(16, 40, 16, 16),
+        padding: const EdgeInsets.fromLTRB(16, 40, 16, 16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             CircleAvatar(
-              child: Image.asset('assets/logos/2-2.png'),
               minRadius: 50,
               maxRadius: 70,
+              child: Image.asset('assets/logos/2-2.png'),
             ),
             const SizedBox(height: 40),
             TextField(
@@ -40,10 +40,10 @@ class _editProfileState extends State<editProfile> {
               style: const TextStyle(color: Colors.white),
               decoration: InputDecoration(
                 hintText: 'Johny Depp',
-                fillColor: Color(0xff1C1B1B),
+                fillColor: const Color(0xff1C1B1B),
                 filled: true,
-                hintStyle: TextStyle(fontSize: 15.0, color: Colors.grey),
-                prefixIcon: Icon(
+                hintStyle: const TextStyle(fontSize: 15.0, color: Colors.grey),
+                prefixIcon: const Icon(
                   Icons.person_2_outlined,
                   color: Colors.white,
                 ),
@@ -51,30 +51,30 @@ class _editProfileState extends State<editProfile> {
                 OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             TextField(
               keyboardType: TextInputType.emailAddress,
               style: const TextStyle(color: Colors.white),
               decoration: InputDecoration(
                 hintText: 'example111@gmail.com',
-                fillColor: Color(0xff1C1B1B),
+                fillColor: const Color(0xff1C1B1B),
                 filled: true,
-                hintStyle: TextStyle(fontSize: 15.0, color: Colors.grey),
+                hintStyle: const TextStyle(fontSize: 15.0, color: Colors.grey),
                 prefixIcon: Image.asset('assets/logos/Mail.png',height: 25,width: 25),
                 border:
                 OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             TextField(
               keyboardType: TextInputType.number,
               style: const TextStyle(color: Colors.white),
               decoration: InputDecoration(
                 hintText: '+91-98765-43210',
-                fillColor: Color(0xff1C1B1B),
+                fillColor: const Color(0xff1C1B1B),
                 filled: true,
-                hintStyle: TextStyle(fontSize: 15.0, color: Colors.grey),
-                prefixIcon: Icon(
+                hintStyle: const TextStyle(fontSize: 15.0, color: Colors.grey),
+                prefixIcon: const Icon(
                   Icons.phone_android,
                   color: Colors.white,
                 ),
@@ -82,17 +82,17 @@ class _editProfileState extends State<editProfile> {
                 OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             TextField(
               keyboardType: TextInputType.visiblePassword,
               style: const TextStyle(color: Colors.white),
               decoration: InputDecoration(
                 hintText: ''
                     '**********',
-                fillColor: Color(0xff1C1B1B),
+                fillColor: const Color(0xff1C1B1B),
                 filled: true,
-                hintStyle: TextStyle(fontSize: 15.0, color: Colors.grey),
-                prefixIcon: Icon(
+                hintStyle: const TextStyle(fontSize: 15.0, color: Colors.grey),
+                prefixIcon: const Icon(
                   Icons.lock_outline,
                   color: Colors.white,
                 ),
@@ -100,12 +100,11 @@ class _editProfileState extends State<editProfile> {
                 OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
               ),
             ),
-            SizedBox(height: 20),
-            Container(
+            const SizedBox(height: 20),
+            SizedBox(
                 width: double.infinity,
                 height: 55,
                 child: ElevatedButton(
-                  child: Text('Save Changes', style: TextStyle(color: Colors.white),),
                   onPressed: () {
                     Navigator.push(
                         context,
@@ -119,6 +118,7 @@ class _editProfileState extends State<editProfile> {
                   borderRadius: BorderRadius.circular(10.0),
                     ),
                   ),
+                  child: const Text('Save Changes', style: TextStyle(color: Colors.white),),
                 )
             ),
            ],

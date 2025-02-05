@@ -16,7 +16,7 @@ class _shippingAddressState extends State<shippingAddress> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Text("Shipping Address",
+        title: const Text("Shipping Address",
             style: TextStyle(
                 color: Colors.white,
                 fontSize: 21,
@@ -31,21 +31,21 @@ class _shippingAddressState extends State<shippingAddress> {
       ),
       backgroundColor: Colors.black,
       body: SingleChildScrollView(
-        padding: EdgeInsets.fromLTRB(16, 16, 16, 16),
+        padding: const EdgeInsets.fromLTRB(16, 16, 16, 16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             ListTile(
               leading:
-                  Icon(Icons.location_on_outlined, color: Colors.pinkAccent),
+                  const Icon(Icons.location_on_outlined, color: Colors.pinkAccent),
               subtitle: Text(
                 loremIpsum(words: 15),
-                style: TextStyle(
+                style: const TextStyle(
                     color: Colors.white54,
                     fontSize: 11,
                     fontWeight: FontWeight.w300),
               ),
-              title: Text('Home',
+              title: const Text('Home',
                   style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.w500,
@@ -62,15 +62,15 @@ class _shippingAddressState extends State<shippingAddress> {
             ),
             ListTile(
               leading:
-                  Icon(Icons.location_on_outlined, color: Colors.pinkAccent),
-              title: Text('Home2',
+                  const Icon(Icons.location_on_outlined, color: Colors.pinkAccent),
+              title: const Text('Home2',
                   style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.w500,
                       fontSize: 12.56)),
               subtitle: Text(
                 loremIpsum(words: 15),
-                style: TextStyle(
+                style: const TextStyle(
                     color: Colors.white54,
                     fontSize: 11,
                     fontWeight: FontWeight.w300),
@@ -87,15 +87,15 @@ class _shippingAddressState extends State<shippingAddress> {
             ),
             ListTile(
               leading:
-                  Icon(Icons.location_on_outlined, color: Colors.pinkAccent),
+                  const Icon(Icons.location_on_outlined, color: Colors.pinkAccent),
               subtitle: Text(
                 loremIpsum(words: 15),
-                style: TextStyle(
+                style: const TextStyle(
                     color: Colors.white54,
                     fontSize: 11,
                     fontWeight: FontWeight.w300),
               ),
-              title: Text('Office',
+              title: const Text('Office',
                   style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.w500,
@@ -112,15 +112,15 @@ class _shippingAddressState extends State<shippingAddress> {
             ),
             ListTile(
               leading:
-                  Icon(Icons.location_on_outlined, color: Colors.pinkAccent),
+                  const Icon(Icons.location_on_outlined, color: Colors.pinkAccent),
               subtitle: Text(
                 loremIpsum(words: 15),
-                style: TextStyle(
+                style: const TextStyle(
                     color: Colors.white54,
                     fontSize: 11,
                     fontWeight: FontWeight.w300),
               ),
-              title: Text("Parent's House",
+              title: const Text("Parent's House",
                   style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.w500,
@@ -137,15 +137,15 @@ class _shippingAddressState extends State<shippingAddress> {
             ),
             ListTile(
               leading:
-                  Icon(Icons.location_on_outlined, color: Colors.pinkAccent),
+                  const Icon(Icons.location_on_outlined, color: Colors.pinkAccent),
               subtitle: Text(
                 loremIpsum(words: 15),
-                style: TextStyle(
+                style: const TextStyle(
                     color: Colors.white54,
                     fontSize: 11,
                     fontWeight: FontWeight.w300),
               ),
-              title: Text("Hostel",
+              title: const Text("Hostel",
                   style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.w500,
@@ -160,7 +160,7 @@ class _shippingAddressState extends State<shippingAddress> {
                 },
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 250,
             ),
             TextButton(
@@ -168,10 +168,10 @@ class _shippingAddressState extends State<shippingAddress> {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => addShippingAddress(),
+                      builder: (context) => const addShippingAddress(),
                     ));
               },
-              child: Text('+ Add New Shipping Address',
+              child: const Text('+ Add New Shipping Address',
                   style: TextStyle(
                       color: Colors.orangeAccent,
                       fontWeight: FontWeight.w400,

@@ -17,7 +17,7 @@ class _LoginPageState extends State<LoginPage> {
         backgroundColor: Colors.black,
         body: SingleChildScrollView(
           child: Padding(
-            padding: EdgeInsets.all(16),
+            padding: const EdgeInsets.all(16),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -32,10 +32,10 @@ class _LoginPageState extends State<LoginPage> {
                   style: const TextStyle(color: Colors.white),
                   decoration: InputDecoration(
                     hintText: 'Email',
-                    fillColor: Color(0xff1C1B1B),
+                    fillColor: const Color(0xff1C1B1B),
                     filled: true,
-                    hintStyle: TextStyle(fontSize: 15.0, color: Colors.grey),
-                    prefixIcon: Icon(Icons.email_outlined),
+                    hintStyle: const TextStyle(fontSize: 15.0, color: Colors.grey),
+                    prefixIcon: const Icon(Icons.email_outlined),
                     border:
                     OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
                   ),
@@ -46,10 +46,10 @@ class _LoginPageState extends State<LoginPage> {
                   style: const TextStyle(color: Colors.white),
                   decoration: InputDecoration(
                     hintText: 'Password',
-                    fillColor: Color(0xff1C1B1B),
+                    fillColor: const Color(0xff1C1B1B),
                     filled: true,
-                    hintStyle: TextStyle(fontSize: 15.0, color: Colors.grey),
-                    prefixIcon: Icon(
+                    hintStyle: const TextStyle(fontSize: 15.0, color: Colors.grey),
+                    prefixIcon: const Icon(
                       Icons.lock_outline,
                       color: Colors.white,
                     ),
@@ -82,14 +82,14 @@ class _LoginPageState extends State<LoginPage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text('Dont have an account?', style: TextStyle(color: Colors.grey),),
+                    const Text('Dont have an account?', style: TextStyle(color: Colors.grey),),
                     TextButton(onPressed: () {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
                             builder: (context) => const SignUp()),
                       );
-                    }, child: Text('SignUp', style: TextStyle(color: Colors.pinkAccent)))
+                    }, child: const Text('SignUp', style: TextStyle(color: Colors.pinkAccent)))
                   ],
                 ),
               ],

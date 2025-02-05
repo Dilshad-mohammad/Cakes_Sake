@@ -23,7 +23,7 @@ class _VerificationState extends State<Verification> {
       backgroundColor: Colors.black,
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(16),
+          padding: const EdgeInsets.all(16),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -50,10 +50,10 @@ class _VerificationState extends State<Verification> {
                       height: 40,
                       width: 50,
                       child: TextField(
-                        style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 17),
+                        style: const TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 17),
                         decoration: InputDecoration(
                           filled: true,
-                          fillColor: Color(0xff1C1B1B),
+                          fillColor: const Color(0xff1C1B1B),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(5),
                           )
@@ -67,10 +67,10 @@ class _VerificationState extends State<Verification> {
                       height: 40,
                       width: 50,
                       child: TextField(
-                        style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 17),
+                        style: const TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 17),
                         decoration: InputDecoration(
                           filled: true,
-                          fillColor: Color(0xff1C1B1B),
+                          fillColor: const Color(0xff1C1B1B),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(5),
                           )
@@ -84,10 +84,10 @@ class _VerificationState extends State<Verification> {
                       height: 40,
                       width: 50,
                       child: TextField(
-                        style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 17),
+                        style: const TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 17),
                         decoration: InputDecoration(
                           filled: true,
-                          fillColor: Color(0xff1C1B1B),
+                          fillColor: const Color(0xff1C1B1B),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(5),
                           )
@@ -101,10 +101,10 @@ class _VerificationState extends State<Verification> {
                       height: 40,
                       width: 50,
                       child: TextField(
-                        style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 17),
+                        style: const TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 17),
                         decoration: InputDecoration(
                           filled: true,
-                          fillColor: Color(0xff1C1B1B),
+                          fillColor: const Color(0xff1C1B1B),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(5),
                           )
@@ -114,11 +114,11 @@ class _VerificationState extends State<Verification> {
                   ),
                 ],
               ),
-              SizedBox(height: 10),
-              Text("Didn't recieve OTP?",style: TextStyle(fontWeight: FontWeight.w400,fontSize: 16,color: Colors.white)),
-              SizedBox(height: 10),
-              Text('Resend Code',style: TextStyle(fontWeight: FontWeight.w500,fontSize: 15,color: Colors.pinkAccent)),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
+              const Text("Didn't recieve OTP?",style: TextStyle(fontWeight: FontWeight.w400,fontSize: 16,color: Colors.white)),
+              const SizedBox(height: 10),
+              const Text('Resend Code',style: TextStyle(fontWeight: FontWeight.w500,fontSize: 15,color: Colors.pinkAccent)),
+              const SizedBox(height: 10),
               SizedBox(
                   width: double.infinity,
                   height: 55,

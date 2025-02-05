@@ -28,13 +28,13 @@ Widget buildAppBarContent() {
             children: [
               Row(
                 children: [
-                  CircleAvatar(
+                  const CircleAvatar(
                     backgroundImage: NetworkImage(
                         'https://images.unsplash.com/photo-1600880292203-757bb62b4baf'),
                     radius: 25,
                   ),
-                  SizedBox(width: 16),
-                  Column(
+                  const SizedBox(width: 16),
+                  const Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text("Dilshad Alam",
@@ -47,9 +47,9 @@ Widget buildAppBarContent() {
                           TextStyle(fontSize: 14, color: Colors.white70)),
                     ],
                   ),
-                  Spacer(),
+                  const Spacer(),
                   IconButton(
-                      icon: Icon(Icons.shopping_cart, color: Colors.white),
+                      icon: const Icon(Icons.shopping_cart, color: Colors.white),
                       onPressed: () {
                         // Navigator.push(
                         //     context,
@@ -57,7 +57,7 @@ Widget buildAppBarContent() {
                         //         builder: (context) => CartPage()));
                       }),
                   IconButton(
-                      icon: Icon(Icons.notifications, color: Colors.white),
+                      icon: const Icon(Icons.notifications, color: Colors.white),
                       onPressed: () {
                         // Navigator.push(
                         //     context,
@@ -66,48 +66,46 @@ Widget buildAppBarContent() {
                       }),
                 ],
               ),
-              SizedBox(height: 16),
-              Expanded(
-                child: Container(
-                  height: 50,
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      colors: [Color(0xFFcd8ea1), Color(0xFFc791ab)],
-                      // Light gradient
-                      begin: Alignment.centerLeft,
-                      end: Alignment.centerRight,
-                    ),
-                    borderRadius: BorderRadius.circular(15),
+              const SizedBox(height: 26),
+              Container(
+                height: 50,
+                decoration: BoxDecoration(
+                  gradient: const LinearGradient(
+                    colors: [Color(0xFFcd8ea1), Color(0xFFc791ab)],
+                    // Light gradient
+                    begin: Alignment.centerLeft,
+                    end: Alignment.centerRight,
                   ),
-                  child: Row(
-                    children: <Widget>[
-                      Expanded(
-                        child: TextField(
-                          decoration: InputDecoration(
-                            hintText: "Search...",
-                            hintStyle: TextStyle(color: Colors.white70),
-                            border: InputBorder.none,
-                            contentPadding: EdgeInsets.symmetric(vertical: 15),
-                            prefixIcon: Padding(
-                              padding:
-                              const EdgeInsets.only(left: 10, right: 10),
-                              child: GestureDetector(
-                                onTap: () {
-                                  // Navigator.push(
-                                  //   context,
-                                  //   MaterialPageRoute(
-                                  //       builder: (context) => WishListScreen()),
-                                  // );
-                                },
-                                child: Icon(Icons.search, color: Colors.black),
-                              ),
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: Row(
+                  children: <Widget>[
+                    Expanded(
+                      child: TextField(
+                        decoration: InputDecoration(
+                          hintText: "Search...",
+                          hintStyle: const TextStyle(color: Colors.white70),
+                          border: InputBorder.none,
+                          contentPadding: const EdgeInsets.symmetric(vertical: 15),
+                          prefixIcon: Padding(
+                            padding:
+                            const EdgeInsets.only(left: 10, right: 10),
+                            child: GestureDetector(
+                              onTap: () {
+                                // Navigator.push(
+                                //   context,
+                                //   MaterialPageRoute(
+                                //       builder: (context) => WishListScreen()),
+                                // );
+                              },
+                              child: const Icon(Icons.search, color: Colors.black),
                             ),
                           ),
-                          style: TextStyle(color: Colors.white), // Text color
                         ),
+                        style: const TextStyle(color: Colors.white), // Text color
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ],

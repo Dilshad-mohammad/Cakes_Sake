@@ -1,10 +1,6 @@
 import 'package:cake_lake/Categories/categories.dart';
 import 'package:flutter/material.dart';
-import 'package:carousel_slider/carousel_slider.dart';
-import 'package:cached_network_image/cached_network_image.dart';
-
 import '../Categories/widgets/category_sections.dart';
-import '../Product/widgets/product_category_items.dart';
 import '../Product/widgets/product_section.dart';
 import '../profile/profile.dart';
 import 'Widgets/appbar.dart';
@@ -126,7 +122,7 @@ class _HomepageScreenState extends State<HomepageScreen> {
             BottomNavigationBarItem(
               icon: ColorFiltered(
                 colorFilter: ColorFilter.mode(
-                  _currentIndex == 2 ? Color(0xffac4362) : Colors.grey,
+                  _currentIndex == 2 ? const Color(0xffac4362) : Colors.grey,
                   BlendMode.srcIn,
                 ),
                 child: Image.asset(
@@ -140,7 +136,7 @@ class _HomepageScreenState extends State<HomepageScreen> {
             BottomNavigationBarItem(
               icon: ColorFiltered(
                 colorFilter: ColorFilter.mode(
-                  _currentIndex == 3 ? Color(0xffac4362) : Colors.grey,
+                  _currentIndex == 3 ? const Color(0xffac4362) : Colors.grey,
                   BlendMode.srcIn,
                 ),
                 child: Image.asset(
@@ -154,7 +150,7 @@ class _HomepageScreenState extends State<HomepageScreen> {
             BottomNavigationBarItem(
               icon: ColorFiltered(
                 colorFilter: ColorFilter.mode(
-                  _currentIndex == 4 ? Color(0xffac4362) : Colors.grey,
+                  _currentIndex == 4 ? const Color(0xffac4362) : Colors.grey,
                   BlendMode.srcIn,
                 ),
                 child: Image.asset(

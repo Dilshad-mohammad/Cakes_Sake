@@ -22,7 +22,7 @@ class _notificationState extends State<notification> {
             Navigator.pop(context); // Navigate back
           },
         ),
-        title: Text(
+        title: const Text(
           "Notification",
           style: TextStyle(
               color: Colors.white, fontSize: 21, fontWeight: FontWeight.w500),
@@ -32,14 +32,14 @@ class _notificationState extends State<notification> {
       body: ListView(
         children: [
           ListTile(
-            leading: CircleAvatar(
+            leading: const CircleAvatar(
               backgroundColor: Colors.pinkAccent,
+              radius: 30,
               child: CircleAvatar(
                 backgroundColor: Colors.black,
                 radius: 23,),
-              radius: 30,
             ),
-            title: Row(
+            title: const Row(
               children: [
                 Text('Order Shipped',
                     style: TextStyle(
@@ -58,20 +58,20 @@ class _notificationState extends State<notification> {
               ],
             ),
             subtitle: Text(loremIpsum(words: 25),
-                style: TextStyle(
+                style: const TextStyle(
                     fontWeight: FontWeight.w300,
                     fontSize: 11,
                     color: Colors.white38)),
           ),
           ListTile(
-            leading: CircleAvatar(
+            leading: const CircleAvatar(
               backgroundColor: Colors.pinkAccent,
+              radius: 30,
               child: CircleAvatar(
                 backgroundColor: Colors.black,
                 radius: 23,),
-              radius: 30,
             ),
-            title: Row(
+            title: const Row(
               children: [
                 Text('Order Shipped',
                     style: TextStyle(
@@ -90,20 +90,20 @@ class _notificationState extends State<notification> {
               ],
             ),
             subtitle: Text(loremIpsum(words: 25),
-                style: TextStyle(
+                style: const TextStyle(
                     fontWeight: FontWeight.w300,
                     fontSize: 11,
                     color: Colors.white38)),
           ),
           ListTile(
-            leading: CircleAvatar(
+            leading: const CircleAvatar(
               backgroundColor: Colors.pinkAccent,
+              radius: 30,
               child: CircleAvatar(
                 backgroundColor: Colors.black,
                 radius: 23,),
-              radius: 30,
             ),
-            title: Row(
+            title: const Row(
               children: [
                 Text('Order Shipped',
                     style: TextStyle(
@@ -122,20 +122,20 @@ class _notificationState extends State<notification> {
               ],
             ),
             subtitle: Text(loremIpsum(words: 25),
-                style: TextStyle(
+                style: const TextStyle(
                     fontWeight: FontWeight.w300,
                     fontSize: 11,
                     color: Colors.white38)),
           ),
           ListTile(
-            leading: CircleAvatar(
+            leading: const CircleAvatar(
               backgroundColor: Colors.pinkAccent,
+              radius: 30,
               child: CircleAvatar(
                 backgroundColor: Colors.black,
                 radius: 23,),
-              radius: 30,
             ),
-            title: Row(
+            title: const Row(
               children: [
                 Text('Order Shipped',
                     style: TextStyle(
@@ -154,20 +154,20 @@ class _notificationState extends State<notification> {
               ],
             ),
             subtitle: Text(loremIpsum(words: 25),
-                style: TextStyle(
+                style: const TextStyle(
                     fontWeight: FontWeight.w300,
                     fontSize: 11,
                     color: Colors.white38)),
           ),
           ListTile(
-            leading: CircleAvatar(
+            leading: const CircleAvatar(
               backgroundColor: Colors.pinkAccent,
+              radius: 30,
               child: CircleAvatar(
                 backgroundColor: Colors.black,
                 radius: 23,),
-              radius: 30,
             ),
-            title: Row(
+            title: const Row(
               children: [
                 Text('Order Shipped',
                     style: TextStyle(
@@ -186,20 +186,20 @@ class _notificationState extends State<notification> {
               ],
             ),
             subtitle: Text(loremIpsum(words: 25),
-                style: TextStyle(
+                style: const TextStyle(
                     fontWeight: FontWeight.w300,
                     fontSize: 11,
                     color: Colors.white38)),
           ),
           ListTile(
-            leading: CircleAvatar(
+            leading: const CircleAvatar(
               backgroundColor: Colors.pinkAccent,
+              radius: 30,
               child: CircleAvatar(
                 backgroundColor: Colors.black,
                 radius: 23,),
-              radius: 30,
             ),
-            title: Row(
+            title: const Row(
               children: [
                 Text('Order Shipped',
                     style: TextStyle(
@@ -218,7 +218,7 @@ class _notificationState extends State<notification> {
               ],
             ),
             subtitle: Text(loremIpsum(words: 25),
-                style: TextStyle(
+                style: const TextStyle(
                     fontWeight: FontWeight.w300,
                     fontSize: 11,
                     color: Colors.white38)),

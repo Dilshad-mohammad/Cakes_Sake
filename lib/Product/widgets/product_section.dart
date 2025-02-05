@@ -18,21 +18,21 @@ class ProductsSectionHeading extends StatelessWidget {
             children: [
               Text(
                 sectionTitle,
-                style: TextStyle(
+                style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
                     color: Colors.white),
               ),
               TextButton(
                 onPressed: () {},
-                child: Text(
+                child: const Text(
                   "See all",
                   style: TextStyle(color: Colors.pinkAccent),
                 ),
               ),
             ],
           ),
-          Container(
+          SizedBox(
             height: 260, // Adjust height as needed
             child: ListView.builder(
               scrollDirection: Axis.horizontal,

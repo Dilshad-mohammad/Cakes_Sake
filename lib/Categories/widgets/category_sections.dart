@@ -9,13 +9,13 @@ Widget buildCategorySection(BuildContext context) {
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text('Shop by Occasions',
+        const Text('Shop by Occasions',
             style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.w500,
                 color: Colors.white)),
-        SizedBox(height: 8),
-        Container(
+        const SizedBox(height: 8),
+        SizedBox(
           height: 100,
           child: ListView(
             scrollDirection: Axis.horizontal,

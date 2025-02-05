@@ -23,15 +23,15 @@ class _SignUpState extends State<SignUp> {
       ),
       backgroundColor: Colors.black,
       body: SingleChildScrollView(
-        padding: EdgeInsets.fromLTRB(16, 0, 16, 16),
+        padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Image.asset('assets/images/Sign up.png', height: 325, width: 325),
             const Text('Create Account',
                 style: TextStyle(fontSize: 27, color: Colors.white)),
-            SizedBox(height: 5),
-            Text('Please Fill your Details below',
+            const SizedBox(height: 5),
+            const Text('Please Fill your Details below',
                 style: TextStyle(fontSize: 20, color: Colors.white)),
             const SizedBox(height: 20),
             TextField(
@@ -39,10 +39,10 @@ class _SignUpState extends State<SignUp> {
               style: const TextStyle(color: Colors.white),
               decoration: InputDecoration(
                 hintText: 'Name',
-                fillColor: Color(0xff1C1B1B),
+                fillColor: const Color(0xff1C1B1B),
                 filled: true,
-                hintStyle: TextStyle(fontSize: 15.0, color: Colors.grey),
-                prefixIcon: Icon(
+                hintStyle: const TextStyle(fontSize: 15.0, color: Colors.grey),
+                prefixIcon: const Icon(
                   Icons.person_2_outlined,
                   color: Colors.white,
                 ),
@@ -50,31 +50,31 @@ class _SignUpState extends State<SignUp> {
                     OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             TextField(
               keyboardType: TextInputType.emailAddress,
               style: const TextStyle(color: Colors.white),
               decoration: InputDecoration(
                 hintText: 'Email',
-                fillColor: Color(0xff1C1B1B),
+                fillColor: const Color(0xff1C1B1B),
                 filled: true,
-                hintStyle: TextStyle(fontSize: 15.0, color: Colors.grey),
+                hintStyle: const TextStyle(fontSize: 15.0, color: Colors.grey),
                 prefixIcon:
                     Image.asset('assets/logos/Mail.png', height: 25, width: 25),
                 border:
                     OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             TextField(
               keyboardType: TextInputType.number,
               style: const TextStyle(color: Colors.white),
               decoration: InputDecoration(
                 hintText: 'Phone',
-                fillColor: Color(0xff1C1B1B),
+                fillColor: const Color(0xff1C1B1B),
                 filled: true,
-                hintStyle: TextStyle(fontSize: 15.0, color: Colors.grey),
-                prefixIcon: Icon(
+                hintStyle: const TextStyle(fontSize: 15.0, color: Colors.grey),
+                prefixIcon: const Icon(
                   Icons.phone_android,
                   color: Colors.white,
                 ),
@@ -82,16 +82,16 @@ class _SignUpState extends State<SignUp> {
                     OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             TextField(
               keyboardType: TextInputType.visiblePassword,
               style: const TextStyle(color: Colors.white),
               decoration: InputDecoration(
                 hintText: 'Password',
-                fillColor: Color(0xff1C1B1B),
+                fillColor: const Color(0xff1C1B1B),
                 filled: true,
-                hintStyle: TextStyle(fontSize: 15.0, color: Colors.grey),
-                prefixIcon: Icon(
+                hintStyle: const TextStyle(fontSize: 15.0, color: Colors.grey),
+                prefixIcon: const Icon(
                   Icons.lock_outline,
                   color: Colors.white,
                 ),
@@ -99,8 +99,8 @@ class _SignUpState extends State<SignUp> {
                     OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
               ),
             ),
-            SizedBox(height: 20),
-            Container(
+            const SizedBox(height: 20),
+            SizedBox(
                 width: double.infinity,
                 height: 55,
                 child: ElevatedButton(
@@ -111,22 +111,22 @@ class _SignUpState extends State<SignUp> {
                           builder: (context) => const LoginPage(),
                         ));
                   },
-                  child: Text(
-                    'SignUp',
-                    style: TextStyle(color: Colors.white),
-                  ),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.pinkAccent,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10.0),
                     ),
                   ),
+                  child: const Text(
+                    'SignUp',
+                    style: TextStyle(color: Colors.white),
+                  ),
                 )),
-            SizedBox(height: 100),
+            const SizedBox(height: 100),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
+                const Text(
                   'Already have an account!',
                   style: TextStyle(color: Colors.grey),
                 ),
@@ -138,7 +138,7 @@ class _SignUpState extends State<SignUp> {
                             builder: (context) => const LoginPage()),
                       );
                     },
-                    child: Text('Login',
+                    child: const Text('Login',
                         style: TextStyle(color: Colors.pinkAccent)))
               ],
             ),

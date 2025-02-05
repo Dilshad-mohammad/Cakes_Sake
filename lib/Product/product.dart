@@ -45,11 +45,11 @@ class _ProductState extends State<Product> {
             children: [
             Container(
             width: 180,
-            margin: EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 0.0),
+            margin: const EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 0.0),
             decoration: BoxDecoration(
-              color: Color(0xffa24973),
+              color: const Color(0xffa24973),
               borderRadius: BorderRadius.circular(10.0),
-              boxShadow: [
+              boxShadow: const [
                 BoxShadow(
                   color: Colors.black26,
                   blurRadius: 6.0,
@@ -61,7 +61,7 @@ class _ProductState extends State<Product> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 ClipRRect(
-                  borderRadius: BorderRadius.vertical(top: Radius.circular(10.0)),
+                  borderRadius: const BorderRadius.vertical(top: Radius.circular(10.0)),
                   child: CachedNetworkImage(
                     imageUrl: 'img.png',
                     height: 135,
@@ -72,7 +72,7 @@ class _ProductState extends State<Product> {
                 Padding(
                   padding: const EdgeInsets.fromLTRB(20.0, 8.0, 20.0, 14.0),
                   child: Transform.translate(
-                    offset: Offset(0, -30), // Shift the button 10 pixels up
+                    offset: const Offset(0, -30), // Shift the button 10 pixels up
                     child: ElevatedButton(
                       onPressed: () {
                         // Navigator.push(
@@ -81,15 +81,15 @@ class _ProductState extends State<Product> {
                         //         builder: (context) => ProductDetailPage()));
                       },
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Color(0xffc79a3f),
+                        backgroundColor: const Color(0xffc79a3f),
                         // Button color
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20.0), // Rounded button
                         ),
                         minimumSize:
-                        Size(double.infinity, 40), // Make button full width
+                        const Size(double.infinity, 40), // Make button full width
                       ),
-                      child: Text(
+                      child: const Text(
                         "ADD",
                         style: TextStyle(color: Colors.white),
                       ),
@@ -97,7 +97,7 @@ class _ProductState extends State<Product> {
                   ),
                 ),
                 Transform.translate(
-                  offset: Offset(0, -35), // Shift the button 10 pixels up
+                  offset: const Offset(0, -35), // Shift the button 10 pixels up
                   child: const Padding(
                     padding: EdgeInsets.fromLTRB(8.0, 2.0, 8.0, 0.0),
                     child: Column(
@@ -175,7 +175,7 @@ Widget _buildImageSlider() {
           width: 1000,
         ),
       ))
-          .toList(),
+          ,
     ],
   );
 }
@@ -183,11 +183,11 @@ Widget _buildImageSlider() {
 Widget _buildProductItem(String imageUrl, BuildContext context) {
   return Container(
     width: 180,
-    margin: EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 0.0),
+    margin: const EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 0.0),
     decoration: BoxDecoration(
-      color: Color(0xffa24973),
+      color: const Color(0xffa24973),
       borderRadius: BorderRadius.circular(10.0),
-      boxShadow: [
+      boxShadow: const [
         BoxShadow(
           color: Colors.black26,
           blurRadius: 6.0,
@@ -199,7 +199,7 @@ Widget _buildProductItem(String imageUrl, BuildContext context) {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         ClipRRect(
-          borderRadius: BorderRadius.vertical(top: Radius.circular(10.0)),
+          borderRadius: const BorderRadius.vertical(top: Radius.circular(10.0)),
           child: CachedNetworkImage(
             imageUrl: imageUrl,
             height: 135,
@@ -210,7 +210,7 @@ Widget _buildProductItem(String imageUrl, BuildContext context) {
         Padding(
           padding: const EdgeInsets.fromLTRB(20.0, 8.0, 20.0, 14.0),
           child: Transform.translate(
-            offset: Offset(0, -30), // Shift the button 10 pixels up
+            offset: const Offset(0, -30), // Shift the button 10 pixels up
             child: ElevatedButton(
               onPressed: () {
                 // Navigator.push(
@@ -219,15 +219,15 @@ Widget _buildProductItem(String imageUrl, BuildContext context) {
                 //         builder: (context) => ProductDetailPage()));
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: Color(0xffc79a3f),
+                backgroundColor: const Color(0xffc79a3f),
                 // Button color
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20.0), // Rounded button
                 ),
                 minimumSize:
-                Size(double.infinity, 40), // Make button full width
+                const Size(double.infinity, 40), // Make button full width
               ),
-              child: Text(
+              child: const Text(
                 "ADD",
                 style: TextStyle(color: Colors.white),
               ),
@@ -235,7 +235,7 @@ Widget _buildProductItem(String imageUrl, BuildContext context) {
           ),
         ),
         Transform.translate(
-          offset: Offset(0, -35), // Shift the button 10 pixels up
+          offset: const Offset(0, -35), // Shift the button 10 pixels up
           child: const Padding(
             padding: EdgeInsets.fromLTRB(8.0, 2.0, 8.0, 0.0),
             child: Column(
